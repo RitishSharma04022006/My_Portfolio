@@ -18,8 +18,16 @@
     }
 }
 
+@media only screen and (min-width:1440px){
+    body{
+        width: 1440px;
+        margin: auto;
+    }
+}
+
 body{
     background-color: black;
+    color: white;
 }
 
 
@@ -136,5 +144,110 @@ body{
 
     .hamesburger i{
         cursor:pointer;
+    }
+}
+
+
+/* Herosection */
+.herosection{
+    width: 100%;
+    margin-top: 2rem;
+    padding: var(--padding);
+}
+
+.section{
+    width: 100%;
+    display: flex;
+}
+
+.herosection1{
+    display: flex;
+    flex-direction: column;
+}
+.hero-heading{
+    font-size: 3rem;
+    font-weight:700;
+}
+
+.name{
+    color: #00ADB5;
+}
+
+.hero-heading2{
+    color: #00ADB5;
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.overview{
+    margin-top: 0.5rem;
+    color: #a1a1aa;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.herosection1 .button{
+    height: 20%;
+}
+
+.herosection2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.herosection .hero-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img{
+    z-index: -10;
+    width: 70%;
+    border-radius: 1rem;
+}
+
+.herosection2 .socialmedialinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    /* z-index: -10; */
+}
+
+/* .links a{
+    cursor: pointer;
+} */
+
+
+
+@media only screen and (max-width:1100px){
+    .herosection .section{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .herosection .hero-image{
+        width: 100%;
+        justify-content: start;
+    }
+
+    .herosection2 .socialmedialinks{
+        justify-content: start;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .herosection .hero-image img{
+        width: 100%;
+    }
+
+    .herosection1 h1{
+        font-size: 1.5rem;
+    }
+    .herosection1 h2{
+        font-size: 1.5rem;
     }
 }
