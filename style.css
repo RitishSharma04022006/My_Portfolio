@@ -217,7 +217,7 @@ body{
 
 }
 
-.herosection2 .socialmedialinks{
+.socialmedialinks{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,8 +225,9 @@ body{
     margin-top: 0.5rem;
 }
 
-.herosection2 .socialmedialinks a img{
-    z-index: -10;
+.socialmedialinks a img{
+    position: relative;
+    z-index: -1;
 }
 
 
@@ -243,7 +244,7 @@ body{
         justify-content: start;
     }
 
-    .herosection2 .socialmedialinks{
+    .socialmedialinks{
         justify-content: start;
     }
 }
@@ -258,6 +259,9 @@ body{
     }
     .herosection1 h2{
         font-size: 1.5rem;
+    }
+    .herosection{
+        margin-top:3rem ;
     }
 }
 
@@ -342,9 +346,10 @@ body{
 .educations{
     border: 3px solid #3d3e3f;
     border-radius: 12px;
-    padding:1rem;
+    padding:0.5rem 1rem;
     color: #a1a1aa;
     width: 50%;
+    height: auto;
 }
 
 .educations .h4{
@@ -354,7 +359,7 @@ body{
 @media only screen and (max-width:426px){
     .educationbox{
         display: grid;
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: 1fr 0.5fr;
         grid-template-columns: repeat(1,1fr);
     }
     .educations{
@@ -449,10 +454,21 @@ body{
     }
 
     .cboxes .image img{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
+}
 
+/* footer */
+.footer{
+    margin-top: 6rem;
+    padding: var(--padding);
+    /* background-color: #3d3e3f; */
+}
+
+.footer .socialmedialinks{
+    padding: 1rem 0;
+    justify-content: start;
 
 }
 
